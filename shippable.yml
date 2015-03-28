@@ -9,10 +9,12 @@ before_install:
 
 install:
  - pip install awscli
-
+ - apt-get update $ apt-get install wget
+ - wget -qO- https://get.docker.com/ | sh
+ - sudo docker info
 script:
  - mvn clean package -DskipTests=true
- - docker build -t hshira/app:latest
+ - sudo docker build -t hshira/app:latest
 
 after_success:
  - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
