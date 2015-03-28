@@ -11,6 +11,7 @@ install:
  - pip install awscli
  - sudo apt-get install wget
  - wget -qO- https://get.docker.com/ | sh
+ - sudo docker run -d busybox
  - sudo docker info
 script:
  - mvn clean package -DskipTests=true
