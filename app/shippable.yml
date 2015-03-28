@@ -1,0 +1,21 @@
+  # language setting
+language: java
+  # jdk tag
+jdk:
+ - openjdk7
+
+before_install:
+ - mkdir -p ~/.m2
+ - mkdir -p /war
+ - cp settings.xml ~/.m2/
+
+install:
+ - pip install awscli
+
+script:
+ - mvn clean package -DskipTests=true
+ - docker build -t hshira/app:latest
+
+after_success:
+ - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
+ - docker push hshira/app:latest
