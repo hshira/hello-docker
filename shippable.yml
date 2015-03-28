@@ -6,8 +6,6 @@ jdk:
 
 before_install:
  - mkdir -p ~/.m2
- - mkdir -p /war
- - cp settings.xml ~/.m2/
 
 install:
  - pip install awscli
