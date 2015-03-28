@@ -9,7 +9,7 @@ before_install:
 
 install:
  - pip install awscli
- - apt-get install wget
+ - sudo apt-get install wget
  - wget -qO- https://get.docker.com/ | sh
  - sudo docker info
 script:
