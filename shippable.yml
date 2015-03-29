@@ -11,10 +11,9 @@ install:
  - pip install awscli
  - sudo apt-get install wget
  - wget -qO- https://get.docker.com/ | sh
- - sudo docker run -d busybox
- - sudo apt-get install linux-image-generic-lts-trusty
- - sudo docker info
-script:
+ - sudo docker run hello-world
+
+ script:
  - mvn clean package -DskipTests=true
  - sudo docker build -t hshira/app:latest
 
