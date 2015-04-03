@@ -5,6 +5,7 @@ dependencies:
   override:
     - mvn clean package
     - docker build -t hshira/hello-docker:ci-$CIRCLE_BUILD_NUM .
+    - docker build -t hshira/hello-docker:latest .
 test:
   override:
     - docker run -d -p 8081:8081 hshira/hello-docker:ci-$CIRCLE_BUILD_NUM; sleep 5
@@ -14,3 +15,4 @@ deployment:
     commands:
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
       - docker push hshira/hello-docker:ci-$CIRCLE_BUILD_NUM
+      - docker push hshira/hello-docker:latest
