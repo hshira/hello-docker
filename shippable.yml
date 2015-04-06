@@ -1,6 +1,5 @@
-  # language setting
 language: java
-  # jdk tag
+
 jdk:
  - openjdk7
 
@@ -12,6 +11,4 @@ install:
  - ls ./shippable/buildoutput 
 
 after_script:
-  - cp -r src ./shippable/buildoutput
- 
- 
+ - cp -r src ./shippable/buildoutput
