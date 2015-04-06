@@ -2,7 +2,7 @@
   "containerDefinitions": [
     {
       "name": "hello-docker",
-      "image": "hshira/hello-docker:latest",
+      "image": "hshira/hello-docker",
       "cpu": 10,
       "memory": 10,
       "essential": true

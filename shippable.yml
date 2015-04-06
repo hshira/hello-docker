@@ -6,8 +6,12 @@ jdk:
 
 install:
  - pip install awscli
- - sudo apt-get install wget
 
  script:
  - mvn clean package -DskipTests=true
+ - ls ./shippable/buildoutput 
+
+after_script:
+  - cp -r src ./shippable/buildoutput
+ 
  
