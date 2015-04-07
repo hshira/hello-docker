@@ -1,0 +1,16 @@
+[
+  {
+    "image": "google/nodejs-hello",
+    "name": "nodejs-hello",
+    "cpu": 500,
+    "memory": 500,
+    "essential": true,
+    "environment": [],
+    "portMappings": [
+      {
+        "containerPort": 8080,
+        "hostPort": 8080
+      }
+    ]
+  }
+]

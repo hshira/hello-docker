@@ -1,0 +1,16 @@
+[
+    {
+      "name": "hello-docker",
+      "image": "hshira/hello-docker",
+      "cpu": 100,
+      "memory": 500,
+      "essential": true,
+      "environment": [],
+      "portMappings": [
+        {
+          "containerPort": 8080,
+          "hostPort": 8080
+        }
+       ] 	
+  }
+]
