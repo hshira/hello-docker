@@ -8,3 +8,6 @@ install:
 
 script:
  - true
+
+ after_success:
+ - aws ecs list-tasks
