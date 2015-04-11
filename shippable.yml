@@ -1,3 +1,9 @@
+env:
+  global:
+    - AWS_ACCESS_KEY_ID=AKIAJXR2K2LSFKM2MZTQ
+    - AWS_DEFAULT_REGION=us-west-2
+    - secure: i1YX8Dz+XmFtlVEO8T1mvJhLgveOrs25FMzyLwkIWI3ajQIOzmuOc2DFZlWaULM+OS1qbTcsA/SkPc90HDkuAqMgqOb15PvEzBown5o9LRH+UtVrZlMOzkYN5zWN9CncRzEEgkvYMaPEaVhIajsxaDOUavzawKgX4MCup1wUBQhGxrQT/r7xkSW1ElSlx5mCOUqj4BkPSsHpf2lkIHte4YxcedURej01PhkThQSBnrAgyGgp3ErPI+V/VkvgyufQDLPzhCTCzntjyQSmefFBBStJVvV06LhkYcLAtjCJv3J/4kGVOn8rHiDp+SQU+An+QXCFh/f99PJ703tT1z7icg==
+
 language: java
 
 jdk:
