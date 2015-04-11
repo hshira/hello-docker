@@ -13,7 +13,8 @@ install:
  - pip install awscli
 
 script:
- - true
+ - mvn clean package -DskipTests=true
+ - ls ./shippable/buildoutput 
 
 after_success:
  - aws ecs list-tasks
