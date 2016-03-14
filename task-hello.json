@@ -2,7 +2,7 @@
     {
       "name": "hello-docker",
       "image": "hshira/hello-docker",
-      "cpu": 100,
+      "cpu": 110,
       "memory": 500,
       "essential": true,
       "environment": [],
