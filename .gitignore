@@ -4,3 +4,5 @@ target/
 .classpath
 *.iml
 .springBeans
+.idea
+logs
