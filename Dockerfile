@@ -5,3 +5,4 @@ FROM tomcat:7-jre8
 RUN mv /usr/local/tomcat/webapps/ROOT /usr/local/tomcat/webapps/ROOT_
 
 COPY target/*.war /usr/local/tomcat/webapps/ROOT.war
+
