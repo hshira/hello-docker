@@ -18,6 +18,7 @@ import javax.ws.rs.core.Response;
 import java.util.*;
 
 @Component
+@Path(value = "/")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
 public class HttpTestResource {

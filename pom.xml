@@ -182,6 +182,18 @@
             <version>2.24.1</version>
         </dependency>
 
+        <!-- https://mvnrepository.com/artifact/org.glassfish.jersey.core/jersey-client -->
+        <dependency>
+            <groupId>org.glassfish.jersey.core</groupId>
+            <artifactId>jersey-server</artifactId>
+            <version>2.24.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.glassfish.jersey.containers</groupId>
+            <artifactId>jersey-container-servlet-core</artifactId>
+            <version>2.24.1</version>
+        </dependency>
+
 
 
         <!-- UNIT TESTING -->
@@ -230,11 +242,7 @@
             <artifactId>maven-clover2-plugin</artifactId>
             <version>${clover.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.glassfish.jersey.containers</groupId>
-            <artifactId>jersey-container-servlet-core</artifactId>
-            <version>2.9.1</version>
-        </dependency>
+
 
     </dependencies>
 
