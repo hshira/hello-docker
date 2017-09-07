@@ -1,6 +1,8 @@
 machine:
   services:
     - docker
+  java:
+    - openjdk8
 dependencies:
   override:
     - mvn clean package
