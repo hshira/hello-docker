@@ -2,7 +2,7 @@ machine:
   services:
     - docker
   java:
-    version: openjdk7
+    version: openjdk8
 dependencies:
   override:
     - mvn clean package
