@@ -91,6 +91,8 @@ public class HttpTestResource {
             }
         } catch (Exception e) {
             logger.info("End {} {} HttpException {}", s, Calendar.getInstance().getTimeInMillis() - lastMillis, e.getMessage());
+            e.printStackTrace();
+            throw new WebApplicationException(e.getMessage(), 500);
         }
         logger.info("End {} {} HttpSuccess {}", s, Calendar.getInstance().getTimeInMillis() - lastMillis, response.getStatusCode());
         return response;
